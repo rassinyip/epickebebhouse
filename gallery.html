@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Epic Kebab House</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <header class="navbar">
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html#top">Home</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="gallery-container" style="max-width: 800px; margin: auto; text-align: center;">
+  <h2 style="font-size: 2.5em; color: #ff9933;">Epic Gallery</h2>
+  <div class="gallery-grid" >
+    <img src="images/gallery/epic2.jpg"  style="width: 200px; height: 200px;" alt="Kebab" onclick="openLightbox(this)">
+    <img src="images/gallery/epic3.jpg" style="width: 200px; height: 200px; ;" alt="Plate Combo" onclick="openLightbox(this)">
+    <img src="images/gallery/unnamed.webp" style="width: 200px; height: 200px" alt="Outdoor Seating" onclick="openLightbox(this)">
+    <img src="images/gallery/epic4.webp" style="width: 200px; height: 200px" alt="Outdoor Seating" onclick="openLightbox(this)">
+    <img src="images/gallery/epic5.webp" style="width: 200px; height: 200px" alt="Outdoor Seating" onclick="openLightbox(this)">
+    <img src="images/gallery/epic6.webp" style="width: 200px; height: 200px" alt="Outdoor Seating" onclick="openLightbox(this)">
+    <img src="images/gallery/epic7.webp" style="width: 200px; height: 200px" alt="Outdoor Seating" onclick="openLightbox(this)">
+    <img src="images/gallery/epic9.webp" style="width: 200px; height: 200px" alt="Outdoor Seating" onclick="openLightbox(this)">
+    <img src="images/gallery/epic10.webp" style="width: 200px; height: 200px" alt="Outdoor Seating" onclick="openLightbox(this)">
+    <!-- Add more as needed -->
+  </div>
+</div>
+
+<!-- Lightbox Structure -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Zoomed Image">
+</div>
+
+<script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Epic Kebab House</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <header class="hero">
+  </header>
+<header class="navbar">
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+ 
+
+
+  <section id="partner" class="partner" style="background-color: black; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif;">
+  <p style="font-size: 1.2em; color: white; margin-bottom: 20px;">
+    We are partnered with:
+  </p>
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <a href="https://www.menulog.com.au/restaurants-epic-kebab-house-st-leonards-/menu" target="_blank">
+    <img src="images/menulog.png" alt="Menulog" style="width: 80px; border-radius: 8px;" /></a>
+    <a href="https://www.ubereats.com/au/store/epic-kebab-house/AGWdC7hnTwi03JnYwLoD2g?srsltid=AfmBOorPwVIMbKIAqUALy5TKDCzlHQTA7xXwJzG6F5KhUA5MC8JwVp3A" target="_blank">
+    <img src="images/ubereat.png" alt="Uber Eats" style="width: 80px; border-radius: 8px;" /></a>
+    <a href="https://www.doordash.com/en-AU/store/epic-kebab-house-st-leonards-27962984/34063553/?srsltid=AfmBOorTqzsB13k8OlNm8JWYK6RkjhXLet5mcuobjO_u_ZGCaHcBKUVD" target="_blank">
+    <img src="images/doordash.png" alt="DoorDash" style="width: 80px; border-radius: 8px;" /></a>    
+    <img src="images/panda.png" alt="DoorDash" style="width: 75px; border-radius: 8px;" />
+  </div>
+</section>
+
+  <main>
+    <section id="menu" class="section">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">        
+        <div class="menu-card"><h3>🥙 Kebab</h3> <a href="kebab.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/kebab.png" style="width: 160px;"></a><p>Grilled to perfection with choice of sauce.</p></div>
+        <div class="menu-card"><h3>🍔 Burger</h3><a href="burger.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/burger.png" style="width: 150px;"></a><p>Juicy, smoky, and stacked with flavor.</p></div>
+        <div class="menu-card"><h3>🍽️ Plate</h3><a href="plate.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/plate.png" style="width: 150px;"></a><p>Meat, salad, dips, and toasted pita bread.</p></div>
+        <div class="menu-card"><h3>📦 Snack Pack</h3><a href="snack_pack.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/snack.png" style="width: 150px;"></a><p>Chips, meat, and sauce — the holy trinity.</p></div>
+        <div class="menu-card"><h3>🥟 Gözleme</h3><a href="gozleme.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/gozleme.png" style="width: 150px;" alt="Gozleme"></a><p>Traditional Turkish flatbread filled and grilled to perfection.</p></div>
+        <div class="menu-card"><h3>🍟 Hot Chips</h3><a href="chips.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/chips.png" style="width: 120px;" alt="Hot Chips"></a><p>Crispy golden fries served piping hot.</p> </div>
+        <div class="menu-card"><h3>🍢Epic's Snack</h3><a href="epic_snack.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/epic_snack.png" style="width: 200px;" alt="Epic Snack"></a><p>Flaky pastry layered with nuts and sweet syrup—a perfect Turkish dessert.</p></div>
+        <div class="menu-card"><h3> 🌯Epic's Bundle🥤</h3><a href="bundle.html"onclick="openCenteredPopup(this.href, 1280, 700); return false;"><img src="images/bundle.png" style="width: 200px;"></a>
+        <p>A complete meal deal: kebab, snack pack or burger, crispy chips, and a refreshing drink—all in one epic box.</p></div>
+        <div class="menu-card"><h3>🍯 Baklava</h3><img src="images/baklava.png" style="width: 150px;" alt="Baklava"><p>Flaky pastry layered with nuts and sweet syrup—a perfect Turkish dessert.</p></div>
+      </div>
+    </section>
+  <script>
+    function openCenteredPopup(url, width, height) {
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+    window.open(url, 'popupWindow', `width=${width},height=${height},left=${left},top=${top}`);
+    }
+  </script>
+  <style>
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: 4px solid #ff9933;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>
+
+<section id="contact" style="background-color: rgba(245, 245, 245, 0.236); padding: 60px 20px; font-family: Arial, sans-serif;">
+  <div style="max-width: 900px; margin: auto; background: black; padding: 40px; border-radius: 10px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; gap: 20px;">
+  <img src="images/epiclogo.jpeg" alt="Epic Kebab House Logo" class="logo" />  
+    <!-- Contact Info -->
+    <div style="flex: 1; min-width: 450px;">
+      <h2 style="color: #cc3300; margin-bottom: 20px;">Contact Us</h2>
+      <p><strong>📍 Address:</strong> 24 Pacific Highway, St Leonards, NSW 2065</p>
+      <p><strong>📞 Phone:</strong> 0466 986 148 (Phone Order Welcome!)</p>
+    </div>
+
+    <!-- Trading Hours -->
+    <div style="flex: 1; min-width: 250px;">
+      <h3 style="color: #cc3300; margin-bottom: 10px;">⏰ Trading Hours</h3>
+      <ul style="list-style: none; padding: 0; color: white; line-height: 1.6;">
+        <li><strong>Mon – Wed:</strong> 11:00 AM – 2:30 AM</li>
+        <li><strong>Thur – Sat:</strong> 11:00 AM – 3:30 AM</li>
+        <li><strong>Sunday:</strong> 3:30 PM – 3:00 AM</li>
+      </ul>
+    </div>
+
+</section>
+</style>
+</html>
