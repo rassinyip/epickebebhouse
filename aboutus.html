@@ -15,13 +15,15 @@
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
+  <div class="lang-toggle">
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+    <button onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
+  </div>
   </nav>
-<div class="lang-toggle">
-  <button onclick="setLanguage('en')">🇬🇧 English</button>
-  <button onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
-</div>
+
 </header>
 <body>
+<div class="lang-content en">
 <section id="about" style="background-color: #1a1a1a; color: white; padding: 40px; font-family: Arial, sans-serif;">
   <div style="max-width: 800px; margin: auto; text-align:center;">
     <h2 style="font-size: 2.5em; color: #ff9933;">About Us</h2>
@@ -35,7 +37,7 @@
     <p style="line-height: 1.8;">In 2004, Rasim brought the warmth of Turkish cuisine to Manila, opening one of the city’s first authentic Turkish restaurants. His food became more than a meal—it became a cultural bridge.</p>
     <p style="line-height: 1.8;">By 2007, he landed in Australia and explored industries far from the kitchen. But his love for food was unstoppable. </p>
     <p style="line-height: 1.8;">
-    <img src="images/light1.jpg"  style="float: left; margin: 10px 0 10px 20px; width:400px; border-radius: 8px;">In 2024, he opened Epic Kebab House in Sydney—a fusion of tradition and bold flavors, rooted in his love for sharing unforgettable meals.
+    <img src="images/light1.jpg"  style="float: left; margin: 10px 0 10px 20px; width:300px; border-radius: 8px;">In 2024, he opened Epic Kebab House in Sydney—a fusion of tradition and bold flavors, rooted in his love for sharing unforgettable meals.
     serving up mouthwatering kebabs,
     his famous <em>homemade chili sauce</em>, and unforgettable customer care at prices that keep locals coming back.
     </p> 
@@ -55,7 +57,89 @@
       <img src="images/ras4.JPG" alt="Philippines">
     </div>
     <div class="slide fade">
-      <img src="images/ras.JPG" alt="Philippines">
+      <img src="images/ras.jpg" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras6.jpg" alt="Philippines">
+    </div>
+  </div>
+</section>    
+    <p style="line-height: 1.8;">
+      With a second branch opening in the Philippines, Rasim’s mission is clear:
+    <p style="font-weight: bold; margin-top: 50px; color: #ff9933;">
+      "to serve stories through food, one juicy kebab at a time."</p>
+  
+      <a class="chef-btn" href="index.html#menu">👉 Taste the Journey – View Our Menu</a>
+    
+    <br>
+    <br>
+    <br>
+ 
+    <h3 style="font-size: 2.2em; color: #cc3300; text-align: center;">Epic Kebab House – St Leonards, NSW</h3>
+    
+    <p style="line-height: 1.8; font-size: 1.1em; margin-top: 30px;">
+      <strong>Opened in February 2024</strong>, Epic Kebab House has quickly become a go-to destination for mouthwatering Turkish flavors on Sydney’s North Shore.
+    </p>
+    <img src="images/epic 1.jpg" style="float: left; margin:5px 0 10px 20px; width: 200px; border-radius: 20px;" />
+    <p style="line-height: 1.8; font-size: 1.1em;">
+    
+      Nestled in the heart of <strong>St Leonards (NSW 2065)</strong>, this warm and welcoming spot is run by <strong>Ras</strong>, a seasoned chef whose journey from the kitchens of Türkiye—including time in the <em>Turkish army</em>—to the bustling streets of Sydney is served up in every bite.
+    </p><img src="images/epic 4.jpg" style="float: right; margin: 10px 0 10px 20px; width:230px; border-radius: 20px;"/>
+    
+    <p style="line-height: 1.8; font-size: 1.1em;">
+      With a reputation for <strong>generous portions, affordable prices</strong>, and the beloved <em>homemade chili sauce</em>, Epic Kebab House brings tradition, bold flavor, and big hospitality to the local food scene.
+    </p>
+
+    <p style="line-height: 1.8; font-size: 1.1em; font-weight: bold; color: #cc3300;"> 
+      Whether you're stopping by for a quick lunch or a feast with friends, one thing's certain: at Epic Kebab House, you arrive hungry and leave happy.
+    </p>
+   
+  </div>
+</div>
+</section>
+</body>
+<script>
+  function setLanguage(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+<div class="lang-content tr" style="display: none;">
+ <section id="about" style="background-color: #1a1a1a; color: white; padding: 40px; font-family: Arial, sans-serif;">
+  <div style="max-width: 800px; margin: auto; text-align:center;">
+    <h2 style="font-size: 2.5em; color: #ff9933;">Hakkımızda</h2>
+    <h3 style="margin-top: 10px; font-style: italic; color: #cc3300;" >Epic'in Arkasındaki Lezzet: <span>Şef Rasim Güngör (RAS)</span></h3>
+    <img src="images/ras1.JPG" alt="Young Rasim cooking in Istanbul kitchen"  style="float: left; margin: 10px 20px 10px 0; width: 250px; border-radius: 8px;" >
+    <p style="line-height: 1.8;">İstanbul'un kalbinden Sidney'in hareketli sokaklarına kadar, Şef Rasim Güngör'ün yolculuğu miras, tutku ve küresel macera açısından zengin bir tariftir.</p>
+    <p style="line-height: 1.8;">
+    Lüks bir restoranın ve beş yıldızlı bir otelin mutfağında büyüyen Rasim, çoğu çocuğun tarif okumayı bile beceremediği bir dönemde yemek pişirme sanatında ustalaştı.        
+    <img src="images/ras6.jpg"  style="float: right; margin: 10px 0 10px 20px; width:200px; border-radius: 8px;">
+   Yirmili yaşlarında İstanbul'daki ilk restoranını açtı ve kısa süre sonra kendini Türk Ordusu için yemek pişirirken buldu; aile yemeklerine gösterdiği özeni generallere de gösteriyordu.</p>   
+    <p style="line-height: 1.8;">Rasim, 2004 yılında Türk mutfağının sıcaklığını Manila'ya getirerek şehrin ilk otantik Türk restoranlarından birini açtı. Yemeği bir öğünden daha fazlası oldu; kültürel bir köprü oldu.</p>
+    <p style="line-height: 1.8;">2007'de Avustralya'ya indi ve mutfaktan uzak endüstrileri keşfetti. Ama yemeğe olan sevgisi durdurulamazdı. </p>
+    <p style="line-height: 1.8;">
+    <img src="images/light1.jpg"  style="float: left; margin: 10px 0 10px 20px; width:300px; border-radius: 8px;">
+    2024'te Sidney'de Epic Kebab House'u açtı. Bu, unutulmaz yemekleri paylaşma sevgisinden kaynaklanan gelenek ve cesur lezzetlerin bir füzyonu.
+    ağız sulandıran kebaplar servis ediyor, onun ünlüsü <em>ev yapımı biber sosu</em>, ve yerel halkın tekrar gelmesini sağlayacak fiyatlarla unutulmaz müşteri hizmetleri.
+    </p> 
+<section id="slideshow" class="slideshow-section">
+  <h2>Epik Anlar</h2>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images/ras2.JPG" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras3.jpg" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras1.JPG" alt="Turkiye">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras4.JPG" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras.jpg" alt="Philippines">
     </div>
     <div class="slide fade">
       <img src="images/ras6.jpg" alt="Philippines">
@@ -78,50 +162,41 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 </script>  
-    
-    <p style="line-height: 1.8;">
-      With a second branch opening in the Philippines, Rasim’s mission is clear:
+     <p style="line-height: 1.8;">
+      Filipinler’de ikinci şubesini açan Rasim’in misyonu açık:
     <p style="font-weight: bold; margin-top: 50px; color: #ff9933;">
-      "to serve stories through food, one juicy kebab at a time."</p>
+      "Yemekler aracılığıyla hikayeler sunmak, her seferinde bir sulu kebap sunmak."</p>
   
-      <a class="chef-btn" href="index.html#menu">👉 Taste the Journey – View Our Menu</a>
+      <a class="chef-btn" href="index.html#menu">👉 Yolculuğun Tadına Bakın – Menümüzü Görüntüleyin</a>
     
     <br>
     <br>
-    <br>
-
-    
-    
+    <br>   
  
     <h3 style="font-size: 2.2em; color: #cc3300; text-align: center;">Epic Kebab House – St Leonards, NSW</h3>
     
     <p style="line-height: 1.8; font-size: 1.1em; margin-top: 30px;">
-      <strong>Opened in February 2024</strong>, Epic Kebab House has quickly become a go-to destination for mouthwatering Turkish flavors on Sydney’s North Shore.
+      <strong>Şubat 2024'te açıldı</strong>, Epic Kebab House, Sidney'in Kuzey Yakası'nda ağız sulandıran Türk lezzetleri için kısa sürede gidilecek yer haline geldi.
     </p>
     <img src="images/epic 1.jpg" style="float: left; margin:5px 0 10px 20px; width: 200px; border-radius: 20px;" />
     <p style="line-height: 1.8; font-size: 1.1em;">
     
-      Nestled in the heart of <strong>St Leonards (NSW 2065)</strong>, this warm and welcoming spot is run by <strong>Ras</strong>, a seasoned chef whose journey from the kitchens of Türkiye—including time in the <em>Turkish army</em>—to the bustling streets of Sydney is served up in every bite.
+    Şehrin kalbinde yer almaktadır <strong>St Leonards (NSW 2065)</strong>, bu sıcak ve misafirperver mekan tarafından işletiliyor <strong>Rasim</strong>, Türkiye mutfaklarından gelen yolculuğunu, içinde bulunduğu coğrafyayı ve mutfağını deneyimleyen deneyimli bir şefin <em>Türk ordusu</em>—Sidney'in hareketli sokaklarına özgü lezzetler her lokmada servis ediliyor.
     </p><img src="images/epic 4.jpg" style="float: right; margin: 10px 0 10px 20px; width:230px; border-radius: 20px;"/>
     
     <p style="line-height: 1.8; font-size: 1.1em;">
-      With a reputation for <strong>generous portions, affordable prices</strong>, and the beloved <em>homemade chili sauce</em>, Epic Kebab House brings tradition, bold flavor, and big hospitality to the local food scene.
+      Bir üne sahip <strong>cömert porsiyonlar, uygun fiyatlar</strong>, ve sevgili <em>ev yapımı biber sosu</em>, Epic Kebab House, yerel yemek sahnesine gelenek, cesur lezzet ve büyük misafirperverlik getiriyor.
     </p>
 
     <p style="line-height: 1.8; font-size: 1.1em; font-weight: bold; color: #cc3300;"> 
-      Whether you're stopping by for a quick lunch or a feast with friends, one thing's certain: at Epic Kebab House, you arrive hungry and leave happy.
+      İster hızlı bir öğle yemeği için ister arkadaşlarınızla bir ziyafet için uğrayın, kesin olan bir şey var: Epic Kebab House'a aç gelir ve mutlu ayrılırsınız.
     </p>
    
   </div>
+</div>
 </section>
 </body>
-<script>
-  function setLanguage(lang) {
-    document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
-    document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'block');
-  }
-</script>
-
+</div>
 
 
 </html>
