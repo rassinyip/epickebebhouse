@@ -16,37 +16,83 @@
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
   </nav>
+<div class="lang-toggle">
+  <button onclick="setLanguage('en')">🇬🇧 English</button>
+  <button onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
+</div>
 </header>
 <body>
 <section id="about" style="background-color: #1a1a1a; color: white; padding: 40px; font-family: Arial, sans-serif;">
-  <div style="max-width: 800px; margin: auto; text-align: center;">
+  <div style="max-width: 800px; margin: auto; text-align:center;">
     <h2 style="font-size: 2.5em; color: #ff9933;">About Us</h2>
-    <h3 style="margin-top: 10px; font-style: italic;">From Türkiye to the World—The Journey of Ras</h3>
-    
-    <p style="line-height: 1.8; margin-top: 20px;">
-        Welcome to <strong>Epic Kebab House</strong>, home of bold flavors, big portions, and heartfelt hospitality.
-    </p>
-    <img src="images/ras1.JPG" alt="Chef Ras with kebab" style="float: left; margin: 10px 20px 10px 0; width: 200px; border-radius: 8px;" />
-    <p style="line-height: 1.8;">        
-        It all began in <strong>Türkiye</strong>, where our founder <strong>Ras</strong> learned to cook while serving as a <em>chef in the Turkish army</em>.  
-        He <img src="images/ras2.JPG" style="float: right; margin: 10px 0 10px 20px; width:200px; border-radius: 8px;" />mastered the art of feeding many with skill, speed, and soul. After years in hospitality, Ras followed his dreams beyond borders.
-      He opened his first kebab shop in the <strong>Philippines</strong>, earning a loyal following for his generous meals and warm service.
-     </p>
-    
+    <h3 style="margin-top: 10px; font-style: italic; color: #cc3300;" >The Flavor Behind Epic: <span>Chef Rasim Gungor (RAS)</span></h3>
+    <img src="images/ras1.JPG" alt="Young Rasim cooking in Istanbul kitchen"  style="float: left; margin: 10px 20px 10px 0; width: 250px; border-radius: 8px;" >
+    <p style="line-height: 1.8;">From the heart of Istanbul to the vibrant streets of Sydney, Chef Rasim Gungor’s journey is a recipe rich in heritage, passion, and global adventure.</p>
+    <p style="line-height: 1.8;">
+    Raised in the kitchens of a fine-dining restaurant and five-star hotel, Rasim mastered the art of cooking before most kids could even read a recipe.        
+    <img src="images/ras6.jpg"  style="float: right; margin: 10px 0 10px 20px; width:200px; border-radius: 8px;">
+    He opened his first restaurant in Istanbul in his twenties and soon found himself cooking for the Turkish Army — serving generals with the same care he gave to family dinners.    
+    <p style="line-height: 1.8;">In 2004, Rasim brought the warmth of Turkish cuisine to Manila, opening one of the city’s first authentic Turkish restaurants. His food became more than a meal—it became a cultural bridge.</p>
+    <p style="line-height: 1.8;">By 2007, he landed in Australia and explored industries far from the kitchen. But his love for food was unstoppable. </p>
+    <p style="line-height: 1.8;">
+    <img src="images/light1.jpg"  style="float: left; margin: 10px 0 10px 20px; width:400px; border-radius: 8px;">In 2024, he opened Epic Kebab House in Sydney—a fusion of tradition and bold flavors, rooted in his love for sharing unforgettable meals.
+    serving up mouthwatering kebabs,
+    his famous <em>homemade chili sauce</em>, and unforgettable customer care at prices that keep locals coming back.
+    </p> 
+<section id="slideshow" class="slideshow-section">
+  <h2>Epic Moments</h2>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images/ras2.JPG" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras3.jpg" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras1.JPG" alt="Turkiye">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras4.JPG" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras.JPG" alt="Philippines">
+    </div>
+    <div class="slide fade">
+      <img src="images/ras6.jpg" alt="Philippines">
+    </div>
+  </div>
+</section>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>  
     
     <p style="line-height: 1.8;">
-      <img src="images/ras3.jpg" style="float: left; margin:5px 0 10px 20px; width: 230px; border-radius: 8px;" />
-      Today, Ras brings his passion to <strong>St Leonards, NSW</strong>, serving up mouthwatering kebabs, 
-      his famous <em>homemade chili sauce</em>, and unforgettable customer care at prices that keep locals coming back.
-    </p>
-        
+      With a second branch opening in the Philippines, Rasim’s mission is clear:
     <p style="font-weight: bold; margin-top: 50px; color: #ff9933;">
-      “You don’t just eat here. You feel at home.”    
-    </p>
+      "to serve stories through food, one juicy kebab at a time."</p>
+  
+      <a class="chef-btn" href="index.html#menu">👉 Taste the Journey – View Our Menu</a>
+    
+    <br>
+    <br>
+    <br>
 
     
     
-    <p></p>
+ 
     <h3 style="font-size: 2.2em; color: #cc3300; text-align: center;">Epic Kebab House – St Leonards, NSW</h3>
     
     <p style="line-height: 1.8; font-size: 1.1em; margin-top: 30px;">
@@ -56,10 +102,10 @@
     <p style="line-height: 1.8; font-size: 1.1em;">
     
       Nestled in the heart of <strong>St Leonards (NSW 2065)</strong>, this warm and welcoming spot is run by <strong>Ras</strong>, a seasoned chef whose journey from the kitchens of Türkiye—including time in the <em>Turkish army</em>—to the bustling streets of Sydney is served up in every bite.
-    </p>
+    </p><img src="images/epic 4.jpg" style="float: right; margin: 10px 0 10px 20px; width:230px; border-radius: 20px;"/>
     
     <p style="line-height: 1.8; font-size: 1.1em;">
-      With a reputation for <strong>generous portions, affordable prices</strong>, <img src="images/epic 4.jpg" style="float: right; margin: 10px 0 10px 20px; width:230px; border-radius: 20px;" />and the beloved <em>homemade chili sauce</em>, Epic Kebab House brings tradition, bold flavor, and big hospitality to the local food scene.
+      With a reputation for <strong>generous portions, affordable prices</strong>, and the beloved <em>homemade chili sauce</em>, Epic Kebab House brings tradition, bold flavor, and big hospitality to the local food scene.
     </p>
 
     <p style="line-height: 1.8; font-size: 1.1em; font-weight: bold; color: #cc3300;"> 
@@ -69,4 +115,13 @@
   </div>
 </section>
 </body>
+<script>
+  function setLanguage(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+
+
 </html>

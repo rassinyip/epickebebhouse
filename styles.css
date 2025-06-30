@@ -180,3 +180,51 @@ h1 {
   max-height: 90%;
   border-radius: 10px;
 }
+.chef-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #e63946;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.chef-btn:hover {
+  background: #ba1c28;
+}
+
+.slideshow-section {
+  padding: 4rem 2rem;
+  background-color: black;
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.fade {
+  animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4 }
+  to { opacity: 1 }
+}
+
