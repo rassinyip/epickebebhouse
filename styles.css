@@ -200,13 +200,21 @@ h1 {
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
+  text-align: center;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .chef-btn:hover {
-  background: #ba1c28;
+  background: grey;
 }
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
 
 .slideshow-section {
   padding: 4rem 2rem;
