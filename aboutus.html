@@ -99,12 +99,7 @@
 </div>
 </section>
 </body>
-<script>
-  function setLanguage(lang) {
-    document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
-    document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'block');
-  }
-</script>
+<script src="script.js" defer></script>
 
 <div class="lang-content tr" style="display: none;">
  <section id="about" style="background-color: #1a1a1a; color: white; padding: 40px; font-family: Arial, sans-serif;">
@@ -148,21 +143,8 @@
   </div>
 </section>
 
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let slides = document.getElementsByClassName("slide");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
-</script>  
+<script src="script.js" defer></script>
+  
      <p style="line-height: 1.8;">
       Filipinler'de ikinci şubesi açılan - 3BROTHERS KEBAB HOUSE - 198A. Bonifacio Ave, Marikina City, 1800 Metro Manila, Filipinler. Rasim'in misyonu açıktır:
     <p style="font-weight: bold; margin-top: 50px; color: #ff9933;">
