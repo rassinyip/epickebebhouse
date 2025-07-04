@@ -215,6 +215,49 @@ h1 {
   align-items: center;      /* vertical center */
 }
 
+.about-wrapper {
+ max-width: 900px; margin: auto; text-align:left;
+  justify-items: center;
+  gap: 1rem;
+}
+
+/* Image styling */
+.about-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 300px;
+  border-radius: 8px;
+  float: left  ;
+}
+
+.about-img1{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 300px;
+  border-radius: 8px;
+  float: right  ;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+   .about-img1 {
+    width: 100%;
+  }
+}
+
+
 
 .slideshow-section {
   padding: 4rem 2rem;
