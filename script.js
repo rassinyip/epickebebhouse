@@ -25,3 +25,20 @@ function openCenteredPopup(url, width, height) {
     setTimeout(showSlides, 3000); // Change image every 3 seconds
   }
 
+document.querySelectorAll('video').forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    video.muted = false;
+    video.play();
+  });
+
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.muted = true;
+  });
+});
+
+const video = document.querySelector('video');
+video.addEventListener('click', () => {
+  video.muted = false;
+  video.play();
+});
