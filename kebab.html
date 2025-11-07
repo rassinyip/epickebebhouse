@@ -3,24 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Epic Kebab House</title>
-  <link rel="stylesheet" href="styles.css" />
- </head>
-
-
-<img src="images/kebab_menu.jpg">
-<style>
-  body {
-    margin: 0;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 0.6s ease-in;
-  }
+  
+</head>
+  <title>Epic Kebab House Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      margin: 0;
+      padding: 0;
+      color: red;
+      animation: fadeIn 0.6s ease-in;
+    }   
 
   @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
-  }
-</style>
+    }
+
+    header {
+      background: #d62828;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .menu-section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #d62828;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      border-bottom: 1px dashed white;
+      padding-bottom: 1rem;
+    }
+    .img-large {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+    }
+   
+    .img-small {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    .item-details {
+      flex: 1;
+    }
+    .item-details h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .item-details p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+      color: white;
+    }
+    .item-details .price {
+      font-weight: bold;
+      color: #d62828;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+   
+    .container {
+      display: grid;
+      grid-template-columns: auto auto ;
+      background-color: Red;
+      padding: 10px;
+    }
+
+    .container div {
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      padding: 30px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Epic Kebab House</h1>
+    <p>🔥 "Authentic Flavors, Extraordinary Kebabs"</p>
+  </header>
+
+  <div class="menu-section">
+    <h2>Kebabs & Combo</h2>
+    <div class="menu-item">
+      <img src="images/chicken_kebab.jpg" alt="Chicken Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Chicken Kebab <span class="price">$16.00</span></h3>
+        <p>Chicken, Lettuce, Tomato, Onion, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">-------------<spin class="price">$24.50</spin>  
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/beef_kebab.jpg" alt="Beef Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Beef Kebab <span class="price">$15.00</span></h3>
+        <p>Beef, Lettuce, Tomato, Onion, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">-------------<spin class="price">$23.50</spin>  
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/mixedKebab.png" alt="Mixed Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Mixed Kebab <span class="price">$16.00</span></h3>
+        <p>Chicken, Beef, Lettuce, Tomato, Onion, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">-------------<spin class="price">$24.50</spin>  
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/falafelKebab.png" alt="Falafel Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Falafel Kebab <span class="price">$13.00</span></h3>
+        <p>Falafel, Lettuce, Tomato, Onion, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">-------------<spin class="price">$20.50</spin>  
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/saladRoll.png" alt="Salad Roll" class="img-large">
+      <div class="item-details">
+        <h3>Salad Roll <span class="price">$10.00</span></h3>
+        <p>Lettuce, Tomato, Onion, Cheese, Tabouli, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">-------------<spin class="price">$18.00</spin>  
+      </div>
+    </div>
+    
+
+    <h2> The Lots Kebab & Combo</h2>
+    <div class="menu-item">
+      <img src="images/chicken_kebab.jpg" alt="Chicken Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Chicken The Lots Kebab <span class="price">$17.50</span></h3>
+        <p>Chicken, Lettuce, Tomato, Onion, Cheese, Tabouli, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">----------------<spin class="price">$26.50</spin>  
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/beef_kebab.jpg" alt="Beef Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Beef The Lots Kebab <span class="price">$16.50</span></h3>
+        <p>Beef, Lettuce, Tomato, Onion, Cheese, Tabouli, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">----------------<spin class="price">$25.50</spin>  
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/mixedKebab.png" alt="Mixed Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Mixed The Lots Kebab <span class="price">$17.50</span></h3>
+        <p>Chicken, Beef, Lettuce, Tomato, Onion, Cheese, Tabouli, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">----------------<spin class="price">$26.50</spin>  
+      </div>
+    </div>
+
+     <div class="menu-item">
+      <img src="images/falafelKebab.png" alt="Falafel Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Falafel The Lots Kebab <span class="price">$14.50</span></h3>
+        <p>Falafel, Lettuce, Tomato, Onion, Cheese, Tabouli, Sauce</p>
+        <img src="images/combo.png" alt="combo" class="img-small">----------------<spin class="price">$22.50</spin>  
+      </div>
+    </div>
+
+
+  <div class="container">
+  <div>
+  <h1><u>EXTRA :</u> </h1> 
+    <h3>Cheese <span class="price">$1.00</span></h3>
+    <h3>Tabouli <spin class="price">$1.00</spin></h3>
+    <h3>Meat <span class="price">$3.00</span></h3>
+    <h3>Olive <spin class="price">$1.00</spin></h3>
+    <h3>Jalapeno <span class="price">$1.00</span></h3>
+    <h3>Pickle <spin class="price">$1.00</spin></h3> 
+  </div>
+ 
+  <div>
+    <h1><u>SAUCE :</u></h1>
+    <h3>Tomato Sauce, BBQ Sauce,  </h3>    
+    <h3>Garlic Sauce, Chili Sauce,  </h3>   
+    <h3>Sweet Chili Sauce, Hummus </h3>
+    <h3>Sour Cream <span class="price">$0.50</span></h3>
+    <h3>Mayo <span class="price">$1.00</span></h3>
+    <h3>Homemade Chili Sauce <span class="price">$1.00</span></h3>
+  </div>
+</div>
+
+ <footer>
+    <strong>Menu subject to change. Please refer to in-house pricing.</strong>
+  </footer>
+</body>
 </html>
