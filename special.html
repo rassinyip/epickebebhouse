@@ -3,22 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Epic Kebab House</title>
-  <link rel="stylesheet" href="styles.css" />
+  
 </head>
-<img src="images/special_menu.jpg">
-<style>
-  body {
-    margin: 0;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 0.6s ease-in;
-  }
+  <title>Epic Kebab House Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      margin: 0;
+      padding: 0;
+      color: red;
+      animation: fadeIn 0.6s ease-in;
+    }   
 
   @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
-  }
-</style>
+    }
+
+    header {
+      background: #d62828;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .menu-section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #d62828;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      border-bottom: 1px dashed white;
+      padding-bottom: 1rem;
+    }
+    .img-large {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+    }
+   
+    .img-small {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    .item-details {
+      flex: 1;
+    }
+    .item-details h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .item-details p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+      color: white;
+    }
+    .item-details .price {
+      font-weight: bold;
+      color: #d62828;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+   
+    .container {
+      display: grid;
+      grid-template-columns: auto auto ;
+      background-color: Red;
+      padding: 10px;
+    }
+
+    .container div {
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      padding: 30px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Epic Kebab House</h1>
+    <p>🔥 "Authentic Flavors, Extraordinary Kebabs"</p>
+  </header>
+
+  <div class="menu-section">
+    <h2>Epic's Special</h2>
+    <p>Mondays to Wednesdays tils 5:30pm, Sundays all day.</p>
+    <div class="menu-item">
+      <img src="images/beefKw375.png" alt="Beef Kebab Special" class="img-large">
+      <div class="item-details">
+        <h3>Beef Kebab with 375ml Can <span class="price">--- $18.50</span></h3>
+        <p>Beef, Lettuce, Tomato, Onion, Sauce, 375ml cans</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/chickenKw375.png" alt="Chicken Kebab Special" class="img-large">
+      <div class="item-details">
+        <h3>Chicken Kebab with 375ml Can <span class="price">--- $19.50</span></h3>
+        <p>Chicken , Lettuce, Tomato, Onion, Sauce, 375ml cans</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/beefKw600.png" alt="Beef Kebab Special" class="img-large">
+      <div class="item-details">
+        <h3>Beef Kebab with 600ml Bottle <span class="price">--- $19.95</span></h3>
+        <p>Beef, Lettuce, Tomato, Onion, Sauce, 600ml bottle</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/chickenKw600.png" alt="Chicken Kebab Special" class="img-large">
+      <div class="item-details">
+        <h3>Chicken Kebab with 600ml Bottle <span class="price">--- $20.95</span></h3>
+        <p>Chicken, Lettuce, Tomato, Onion, Sauce, 600ml bottle</p>        
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/burgerwc600.png" alt="Burger Special" class="img-large">
+      <div class="item-details">
+        <h3>Burger with small chips and 600ml Bottle <span class="price">--- $20.95</span></h3>
+        <p>Burger, Small Chips and 600ml bottle</p>
+      </div>
+    </div>    
+
+    <div class="menu-item">
+      <img src="images/chicksp375.png" alt="Chicken Snack Pack" class="img-large">
+      <div class="item-details">
+        <h3>Chicken Snack Pack with 375ml Can <span class="price">--- $18.95</span></h3>
+        <p>Chicken Snack Pack with 375ml can</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/beefsp375.png" alt="Beef Snack Pack" class="img-large">
+      <div class="item-details">
+        <h3>Beef Snack Pack with 375ml Can <span class="price">--- $18.95</span></h3>
+        <p>Beef Snack Pack with 375ml Can</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/chickensp600.png" alt="Mixed Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Chicken Snack Pack with 600ml Bottle <span class="price">--- $21.50</span></h3>
+        <p>Chicken Snack Pack with 600ml Bottle</p>
+      </div>
+    </div>
+
+     <div class="menu-item">
+      <img src="images/beefsp600.png" alt="Falafel Kebab" class="img-large">
+      <div class="item-details">
+        <h3>Beef Snack Pack with 600ml Bottle <span class="price">--- $20.50</span></h3>
+        <p>Beef Snack Pack with 600ml Bottle</p>
+      </div>
+    </div>
+
+
+  <div class="container">
+  <div>
+  <h1><u>EXTRA :</u> </h1> 
+    <h3>Cheese <span class="price">$1.00</span></h3>
+    <h3>Tabouli <spin class="price">$1.00</spin></h3>
+    <h3>Meat <span class="price">$3.00</span></h3>
+    <h3>Olive <spin class="price">$1.00</spin></h3>
+    <h3>Jalapeno <span class="price">$1.00</span></h3>
+    <h3>Pickle <spin class="price">$1.00</spin></h3> 
+  </div>
+ 
+  <div>
+    <h1><u>SAUCE :</u></h1>
+    <h3>Tomato Sauce, BBQ Sauce,  </h3>    
+    <h3>Garlic Sauce, Chili Sauce,  </h3>   
+    <h3>Sweet Chili Sauce, Hummus </h3>
+    <h3>Sour Cream <span class="price">$0.50</span></h3>
+    <h3>Mayo <span class="price">$1.00</span></h3>
+    <h3>Homemade Chili Sauce <span class="price">$1.00</span></h3>
+  </div>
+</div>
+
+ <footer>
+    <strong>Menu subject to change. Please refer to in-house pricing.</strong>
+  </footer>
+</body>
 </html>
