@@ -3,22 +3,190 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Epic Kebab House</title>
-  <link rel="stylesheet" href="styles.css" />
+  
 </head>
-<img src="images/epic_snack_menu.jpg">
-<style>
-  body {
-    margin: 0;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 0.6s ease-in;
-  }
+  <title>Epic Kebab House Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      margin: 0;
+      padding: 0;
+      color: red;
+      animation: fadeIn 0.6s ease-in;
+    }   
 
   @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
-  }
-</style>
+    }
+
+    header {
+      background: #d62828;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .menu-section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #d62828;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      border-bottom: 1px dashed white;
+      padding-bottom: 1rem;
+    }
+    .img-large {
+      width: 200px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+    }
+   
+    .img-small {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    .item-details {
+      flex: 1;
+    }
+    .item-details h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .item-details p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+      color: white;
+    }
+    .item-details .price {
+      font-weight: bold;
+      color: #d62828;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+   
+    .container {
+      display: grid;
+      grid-template-columns: auto auto ;
+      background-color: Red;
+      padding: 10px;
+    }
+
+    .container div {
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      padding: 30px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Epic Kebab House</h1>
+    <p>🔥 "Authentic Flavors, Extraordinary Kebabs"</p>
+  </header>
+
+  <div class="menu-section">
+    <h2>Epic's Sides, Snacks, Desserts & Hot Beverage</h2>
+    
+    <div class="menu-item">
+      <img src="images/chips.png" alt="Hot Chips" class="img-large">
+      <div class="item-details">
+        <h3>Hot Chips </h3>
+        <p>Golden, crispy fries served hot and seasoned to perfection—classic comfort with every bite.</p>
+        <span class="price">Small --- $7.00</span><br>
+        <span class="price">Regular --- $8.00</span><br>
+        <span class="price">Large --- $9.00</span><br>
+        <span class="price">Family --- $10.00</span>        
+    </div>
+    </div>
+
+
+
+
+    <div class="menu-item">
+      <img src="images/chicken.png" alt="Chicken Skewer" class="img-large">
+      <div class="item-details">
+        <h3>Chicken Skewer <span class="price">--- $4.50</span></h3>
+        <p>Tender chunks of marinated chicken, skewered and grilled over open flames for a smoky, juicy finish</p>
+    </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/pbaklava.png" alt="PISTACHIO BAKLAVA" class="img-large">
+      <div class="item-details">
+        <h3>Pistachio Baklava <span class="price">--- $4/each</span></h3>
+        <p>Delicate layers of crisp filo pastry filled with crushed pistachios and soaked in fragrant syrup.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/cbaklava.png" alt="Chocolate Baklava" class="img-large">
+      <div class="item-details">
+        <h3>Chocolate Baklava <span class="price">--- $4/each</span></h3>
+        <p>Crisp layers of buttery filo pastry filled with rich chocolate and crushed nuts, soaked in a velvety cocoa-infused syrup for a decadent twist on the classic baklava.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/vineleafroll.png" alt="Vine Leaf Roll" class="img-large">
+      <div class="item-details">
+        <h3>Vine Leaf Roll <span class="price">--- $1/each</span></h3>
+        <p>Tender vine leaves wrapped around a savory mix of rice, herbs, and spices—served cold with a drizzle of olive oil and a squeeze of lemon.</p>        
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/greeksalad.png" alt="Greek Salads" class="img-large">
+      <div class="item-details">
+        <h3>Epic Greek Salads </h3>
+        <p>Crisp cucumber, juicy tomatoes, red onion, olives, and feta tossed with olive oil and oregano.</p>
+        <span class="price">Small --- $5.00</span><br>
+        <span class="price">Large --- $7.00</span><br>
+        
+      </div>
+    </div>    
+
+    <div class="menu-item">
+      <img src="images/turkishtea.png" alt="Turkish Tea" class="img-large">
+      <div class="item-details">
+        <h3>Turkish Tea <span class="price">--- $3.5</span></h3>
+        <p>Strong black tea brewed in a double teapot, served hot in tulip-shaped glasses.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/turkishcoffee.png" alt="Turkish Coffee" class="img-large">
+      <div class="item-details">
+        <h3>Turkish Coffee <span class="price">--- $4</span></h3>
+        <p>Finely ground Arabica beans brewed slowly over low heat, Turkish coffee is rich, thick, and aromatic—served unfiltered in a small cup with a layer of foam and often enjoyed with a sweet treat.</p>
+      </div>
+    </div> 
+ 
+
+ <footer>
+    <strong>Menu subject to change. Please refer to in-house pricing.</strong>
+  </footer>
+</body>
 </html>
