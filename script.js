@@ -20,8 +20,9 @@ function openCenteredPopup(url, width, height) {
       slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex - 1].style.display = "block";
+    if (slides.length > 0) {
+  slides[slideIndex - 1].style.display = "block";
+}
     setTimeout(showSlides, 3000); // Change image every 3 seconds
   }
 
@@ -37,8 +38,34 @@ document.querySelectorAll('video').forEach(video => {
   });
 });
 
-const video = document.querySelector('video');
-video.addEventListener('click', () => {
-  video.muted = false;
-  video.play();
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.querySelector('video');
+  if (video) {
+    video.addEventListener('click', () => {
+      video.muted = false;
+      video.play();
+    });
+  } 
 });
+
+
+
+  function showPopup() {
+    const popup = document.getElementById('popup');
+    if (popup) {
+      popup.style.display = 'block';
+    } 
+  }
+
+  function closePopup() {
+    const popup = document.getElementById('popup');
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(showPopup, 2000);
+  });
+
+

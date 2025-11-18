@@ -8,13 +8,21 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body id="top">
+
+
+<div id="popup" class="popup-box">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h3>📢 Special Announcement</h3>
+    <p>&#127760 Your Epic Online Ordering is coming soon!!  &#127870</p>
+  </div>
+</div>
+
   <header class="hero">
   <img src="images/lo.png" alt="Epic Kebab House Logo" class="logo">
   <h1>Welcome to <span>Epic Kebab House</span></h1>
   <p class="tagline">🌯"Authentic Flavours, Extraordinary Kebabs"🔥</p>
 </header>
-  
-  
   
 <header class="navbar">
   <nav>
@@ -58,7 +66,9 @@
         <div class="menu-card"><h3>🍢Epic's Special</h3><a href="special.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/special.png" style="width: 200px;" alt="Epic Snack"></a><p>Grilled meat piled on chips, sauced to perfection, plus a cold drink—all for a price that hits the spot.</p></div>
         
     </section>
-  <script src="script.js" defer></script>
+
+      
+
   <style>
   body {
     margin: 0;
@@ -73,6 +83,8 @@
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
   }
+
+ 
 </style>
 
 <section id="contact" style="background-color: rgba(245, 245, 245, 0.236); padding: 60px 20px; font-family: Arial, sans-serif;">
@@ -94,7 +106,7 @@
         <li><strong>Sunday:</strong> 3:30 PM – 3:00 AM</li>
       </ul>
     </div>
-
+  <script src="script.js" defer></script>
 </section>
 </style>
 </html>

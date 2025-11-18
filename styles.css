@@ -303,3 +303,41 @@ video:hover {
 .container {
   overflow: visible;
 }
+
+.popup-box {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #fff;
+  border: 2px solid #ff9800;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  padding: 20px;
+  max-width: 320px;
+  font-family: 'Segoe UI', sans-serif;
+  display: none;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+  color: #ff5722;
+}
+
+.popup-content p {
+  margin: 10px 0 0;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+}
