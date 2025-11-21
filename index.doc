@@ -1,0 +1,29 @@
+<section id="menu" class="section">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">        
+        <div class="menu-card"><h3>🥙 Kebab</h3> <a href="kebab.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/kebab.png" style="width: 160px;"></a><p>Grilled to perfection with choice of sauce.</p></div>
+        <div class="menu-card"><h3>🍔 Burger</h3><a href="burger.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/burger.png" style="width: 150px;"></a><p>Juicy, smoky, and stacked with flavor.</p></div>
+        <div class="menu-card"><h3>🍽️ Plate</h3><a href="plate.html"onclick="openCenteredPopup(this.href, 850 , 1400); return false;"><img src="images/plate.png" style="width: 150px;"></a><p>Meat, salad, dips, and toasted pita bread.</p></div>
+        <div class="menu-card"><h3>📦 Snack Pack</h3><a href="snack_pack.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/snack.png" style="width: 150px;"></a><p>Chips, meat, and sauce — the holy trinity.</p></div>
+        <div class="menu-card"><h3>🥟 Gözleme</h3><a href="gozleme.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/gozleme.png" style="width: 150px;" alt="Gozleme"></a><p>Traditional Turkish flatbread filled and grilled to perfection.</p></div>
+        <div class="menu-card"><h3>🍟 Epic Hot Chips, Snacks, Sides, Sweets & Hot Beverage</h3><a href="epic_snack.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/chips&snack.png" style="width: 180px;" alt="Hot Chips"></a><p>Crispy golden fries served piping hot.</p><p>Flaky pastry layered with nuts and sweet syrup—a perfect Turkish dessert.</p> </div>
+        <div class="menu-card"><h3> 🌯Epic's Bundle🥤</h3><a href="bundle.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/bundle.png" style="width: 200px;"></a>
+        <p>A complete meal deal: kebab, snack pack or burger, crispy chips, and a refreshing drink—all in one epic box.</p></div>
+        <div class="menu-card"><h3>🍢Epic's Special</h3><a href="special.html"onclick="openCenteredPopup(this.href, 850, 1400); return false;"><img src="images/special.png" style="width: 200px;" alt="Epic Snack"></a><p>Grilled meat piled on chips, sauced to perfection, plus a cold drink—all for a price that hits the spot.</p></div>
+        
+    </section>
+
+
+    body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: 4px solid #ff9933;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
