@@ -48,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
   } 
 });
 
-
-
   function showPopup() {
     const popup = document.getElementById('popup');
     if (popup) {

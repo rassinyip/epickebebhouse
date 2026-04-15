@@ -15,8 +15,9 @@
     <span class="close-btn" onclick="closePopup()">&times;</span>
     <h3>📢 Special Announcement</h3>
     <p>&#127760  Skip The Line, Order ONLINE!!  &#127870</p>
-    <strong> <p>🧧🐉✨ A big thank you to our amazing community for your ongoing support. We always put our heart into what we do, 
-      and we’ll keep giving you our very best—always fresh, always epic. ✨🐉🧧</p></strong>
+    <strong> <p>🔥❤️ A big thank you to our amazing community for your ongoing support. We always put our heart into what we do, 
+      and we’ll keep giving you our very best—always fresh, always epic. ✨💛</p></strong>
+    <p>We’re open the same hours as always — come by anytime! ⏰💛</p>
   </div>
 </div>
 
@@ -60,21 +61,119 @@ style="display: flex; justify-content: center; align-items: center; height: 100%
 
 
   <main>
-  <div class="video-container">
-    <video width="800px" height="500px" center autoplay loop muted playsinline>
-        <source src="video/index.mp4" type="video/mp4">
-    </video>
+
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="images/beef_kebab.jpg" style="width:50%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Beef Kebab
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/beef_patty_burger.png" style="width:50%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Beef Patty Burger
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/beefplate.jpg" style="width:50%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Beef Plate
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/beefsnackpack.jpg" style="width:50%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Beef Snack Pack
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/spinachgoz.png" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Spinach Gozleme
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/chicken_fillet_burger.png" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Grilled Chicken Fillet Burger
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/cheesegoz.png" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Cheese Gozleme
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/chickenplate.jpg" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Chicken Plate
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/chickensnackpck.jpg" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Chicken Snack Pack
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/felefalplate.jpg" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Falafel Plate
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/sucukegg.png" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Sucuk & Eggs
+  </div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+    
      
 
+
+
+
 </section>
-<style>
-    .video-container {
-  display: flex;
-  justify-content: center;  /* horizontal centering */
-  align-items: center;      /* vertical centering */
-  height: 100vh;            /* full viewport height */
-} 
-</style>
+
 
 <section id="contact" style="background-color: rgba(245, 245, 245, 0.236); padding: 60px 20px; font-family: Arial, sans-serif;">
   <div style="max-width: 900px; margin: auto; background: black; padding: 40px; border-radius: 10px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; gap: 20px;">
