@@ -10,9 +10,9 @@
 <body id="top">
 
 
-<div id="popup" class="popup-box">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
+<div id="popup" class="popup-overlay">
+  <div class="popup">
+    <span class="close-btn" onclick="closePopup()">x</span>
     <h3>📢 Special Announcement</h3>
     <p>&#127760  Skip The Line, Order ONLINE!!  &#127870</p>
     <strong> <p>🔥❤️ A big thank you to our amazing community for your ongoing support. We always put our heart into what we do, 
@@ -147,7 +147,7 @@ style="display: flex; justify-content: center; align-items: center; height: 100%
 </div>
 
 <script>
-var slideIndex = 1;
+  var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -164,6 +164,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
 </script>
 
     
@@ -194,7 +195,7 @@ function showDivs(n) {
         <li><strong>Sunday:</strong> 3:30 PM – 3:00 AM</li>
       </ul>
     </div>
-  <script src="script.js" defer></script>
+<script src="script.js" defer></script>
 </section>
 </style>
 </html>
